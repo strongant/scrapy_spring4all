@@ -26,4 +26,7 @@ nrm use taobao
 ```
 casperjs index.js
 ```
-
+或者
+```
+npm start
+```
