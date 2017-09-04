@@ -1,0 +1,18 @@
+--2017-08-29 17:28:59--  http://site.com/file.zip
+Resolving site.com... failed: nodename nor servname provided, or not known.
+wget: unable to resolve host address ‘site.com’
+PING google.com (172.217.24.14): 56 data bytes
+64 bytes from 172.217.24.14: icmp_seq=0 ttl=47 time=49.512 ms
+64 bytes from 172.217.24.14: icmp_seq=1 ttl=47 time=63.061 ms
+64 bytes from 172.217.24.14: icmp_seq=2 ttl=47 time=59.815 ms
+64 bytes from 172.217.24.14: icmp_seq=3 ttl=47 time=54.128 ms
+64 bytes from 172.217.24.14: icmp_seq=4 ttl=47 time=206.783 ms
+Request timeout for icmp_seq 5
+Request timeout for icmp_seq 6
+64 bytes from 172.217.24.14: icmp_seq=7 ttl=47 time=139.728 ms
+64 bytes from 172.217.24.14: icmp_seq=8 ttl=47 time=189.897 ms
+64 bytes from 172.217.24.14: icmp_seq=9 ttl=47 time=225.270 ms
+
+--- google.com ping statistics ---
+10 packets transmitted, 8 packets received, 20.0% packet loss
+round-trip min/avg/max/stddev = 49.512/123.524/225.270/70.676 ms

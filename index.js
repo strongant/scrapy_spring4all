@@ -95,7 +95,7 @@ casper.waitForSelector('div.aw-common-list', function () {
         var $span = _$this.find('p').find('span').first();
         if ($span.text().indexOf('发表了文章') != -1) {
           var text = $h4.text().replace(/\s+/ig, '');
-          objs.push(text+"\r\n"+"<"+$h4.find('a').attr('href') +">");
+          objs.push(text+"\r\n"+$h4.find('a').attr('href'));
         }
       }
     });
@@ -127,7 +127,7 @@ casper.waitForSelector('div.aw-common-list', function () {
         var $span = _$this.find('p').find('span').first();
         if ($span.text().indexOf('问题') != -1) {
           var text = $h4.text().replace(/\s+/ig, '');
-          objs.push(text + "\r\n" +"<"+$h4.find('a').attr('href')+">");
+          objs.push(text + "\r\n" +$h4.find('a').attr('href'));
         }
       }
     });
