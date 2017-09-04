@@ -1,4 +1,4 @@
-【 Spring For All 社区日报 20170904】
+【 Spring For All 社区周报 20170904】
 
 「社区开源项目」
 JDK1.9有实现HTTP2Client吗？在哪个类里面
@@ -23,26 +23,26 @@ JDK1.9有实现HTTP2Client吗？在哪个类里面
 <http://spring4all.com/article/127>
 
 
-「每日热门文章」
-《SpringCloud与Docker微服务实战》实体书目录
-<http://spring4all.com/article/203>
+「每周热门文章」
+SpringForAll社区周报20170904
+http://spring4all.com/article/204
 
-「每日热门议题」
+「每周热门议题」
 SpringCache中的@Caching注解是干啥用的？
-<http://spring4all.com/question/420>
+http://spring4all.com/question/420
 想搞个个人博客，有谁可以给我提供页面模板？
-<http://spring4all.com/question/414>
+http://spring4all.com/question/414
 @RequestBody注解不能用于get请求？
-<http://spring4all.com/question/419>
+http://spring4all.com/question/419
 maven根据环境打包，属性值没有注入到xml文件中，求解，谢谢啦
-<http://spring4all.com/question/233>
+http://spring4all.com/question/233
 Eureka+health
-<http://spring4all.com/question/418>
+http://spring4all.com/question/418
 如果使用Zuul做网关，还需要使用Feign么
-<http://spring4all.com/question/408>
+http://spring4all.com/question/408
 @feignclient注解的类无法注入
-<http://spring4all.com/question/417>
+http://spring4all.com/question/417
 在spring.io/guide上如何查看具体配置，如mongodb的服务器ip和端口
-<http://spring4all.com/question/416>
+http://spring4all.com/question/416
 idea装了lombok插件后报了一个错误，这是什么原因？
-<http://spring4all.com/question/415>
+http://spring4all.com/question/415

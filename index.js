@@ -2,7 +2,7 @@ var page = require('webpage').create();
 var fs = require("fs");
 var util = require('utils');
 var timeFormat = require('./timeformater');
-var template = fs.read('./templates/content.txt');
+var template;
 
 var config = JSON.parse(fs.read('./config.json'));
 var url = config.url;
@@ -36,9 +36,22 @@ if (casper.cli.args.length === 0 && Object.keys(casper.cli.options).length === 0
   casper.echo("No arg nor option passed").exit();
 }
 
-var type = casper.cli.get(0);
+//default is day
+var type = casper.cli.get(0) || 'day';
 
 console.log("您输入的参数是: " + type);
+
+if(type && type!="day" && type!="week"){
+  casper.echo("请输入正确的参数：week ").exit();
+}
+
+if(type==='day'){
+  template = fs.read('./templates/content.txt');
+}else{
+  template = fs.read('./templates/content-week.txt');
+}
+
+
 
 var showStatus = require('format').showStatus;
 
