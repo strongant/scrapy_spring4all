@@ -74,7 +74,7 @@ casper.waitForSelector('div.aw-explore-list', function () {
         var _$this = $(item);
         var $h4 = _$this.find('.aw-question-content').find('h4');
         var text = $h4.text().replace(/\s+/ig, '');
-        objs.push(text + '\r\n' +"<" +$h4.find('a').attr('href') + ">" );
+        objs.push(text + '\r\n' +$h4.find('a').attr('href') );
       }
     });
     return objs;
