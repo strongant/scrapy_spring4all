@@ -7,6 +7,10 @@ var template;
 var config = JSON.parse(fs.read('./config.json'));
 var url = config.url;
 var count = config.count;
+var articlePath = config.articlePath;
+if (!fs.exists(articlePath)) {
+  fs.makeDirectory(articlePath)
+}
 
 var stderr = require('system').stderr;
 
@@ -41,7 +45,7 @@ if(type && type!="day" && type!="week"){
   casper.echo("请输入正确的参数：week ").exit();
 }
 
-console.log("你要抓取的是: " + type);
+console.log("你要抓取的是: " + (type==='week' ? "周报":"日报"));
 
 if(type==='day'){
   template = fs.read('./templates/content.txt');
@@ -142,7 +146,7 @@ casper.then(function () {
     .replace('##dailyHotContents##',dailyHotContents.join('\n'))
     .replace('##dailyHotTopics##',dailyHotTopics.join('\n'));
     console.log(content);
-    fs.write(timeFormat.timeFormat()+"/content.txt",content);
+    fs.write(articlePath + "/" + timeFormat.timeFormat()+"/content.txt",content);
 });
 
 casper.run();
