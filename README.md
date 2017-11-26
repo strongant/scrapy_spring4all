@@ -17,9 +17,9 @@ nrm use taobao
 
 ## Features
 
-* 爬取Spring4All社区每日开源项目
-* 爬取Spring4All社区每日热门文章
-* 爬取Spring4All社区每日热门议题
+* 爬取Spring4All社区开源项目
+* 爬取Spring4All社区热门文章
+* 爬取Spring4All社区热门议题
 
 ## Start the scrapy
 
